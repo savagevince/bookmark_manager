@@ -7,6 +7,7 @@ class BookmarkApp < Sinatra::Base
   end
 
   get '/bookmarks' do
+    @list = Bookmark.all
     erb :bookmarks
   end
     # start the server if the ruby file executed directly

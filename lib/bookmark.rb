@@ -1,8 +1,6 @@
 
 class Bookmark
   def self.all
-    @bookmark1 = Bookmark.new
-    @bookmark2 = Bookmark.new
-    [@bookmark1, @bookmark2]
+    ["http://www.github.com", "http://bbc.co.uk", "http://www.makersacademy.com"]
   end
 end
