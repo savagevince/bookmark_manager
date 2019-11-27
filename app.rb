@@ -3,11 +3,11 @@ require './lib/bookmark'
 
 class BookmarkApp < Sinatra::Base
   get '/' do
-    "You've found homepage!"
+    erb :index
   end
 
   get '/bookmarks' do
-    @list = Bookmark.all
+    @bookmarks = Bookmark.all
     erb :bookmarks
   end
     # start the server if the ruby file executed directly
