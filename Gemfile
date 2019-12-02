@@ -6,12 +6,12 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
 ruby '2.6.5'
 
+gem 'pg'
 gem 'rack'
 gem 'rake'
 gem 'sinatra'
-gem 'pg'
 
-group :test do
+group :test, :development do
   gem 'capybara'
   gem 'rspec'
   gem 'rubocop', '0.71.0'
